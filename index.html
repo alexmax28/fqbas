@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.0/css/bootstrapValidator.min.css'/>
+    <link rel="stylesheet" href="../basic.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+        </style>
+    <div class='basicwrap'>
+        <form action="" class="contener" id="form"  data-toggle="validator">
+            <h3>基本資料填寫</h3>
+            <!-- <fieldset> -->
+            <!-- 1 -->
+            <div class="form-group">
+                <label for="">1.請填入您的編號:</label><input type="text" name="verification_code" id="verification_code"  class="form-control form-control-sm" required>
+                <!-- <div class="help-block with-errors"> </div> -->
+            </div>
+            <!-- 2 -->
+            <div class="form-group">
+                <label for="">2.請問您的姓名:</label><input type="text" name="name" id="name" class="form-control form-control-sm">
+            </div>
+            <!-- 3 -->
+            <div class="form-group">
+                <label for="">3.請問您的性別:</label> 
+                <div class="form-check">
+                    <input type="radio" name="sex" id="boy" value="boy" class="form-check-input"><label for="boy" class="form-check-label">男</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="sex" id="girl" value="girl" class="form-check-input"><label for="girl" class="form-check-label">女</label>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="form-group">
+                <label for="">4.請問您的生日:</label></br>
+
+                <div>
+                    <label>民國</label>
+                    <select name="" id="" class="birth_year form-control form-control-sm ">
+                        <option value="" disabled selected>--</option>
+                    </select>
+                    <label>年</label>
+                    
+                    <select name="" id="" class="birth_month form-control form-control-sm">
+                        <option value="" disabled selected>--</option>
+                    </select>
+                    <label>月</label>
+
+                    <select name="" id="" class="birth_date form-control form-control-sm">
+                        <option value="" disabled selected>--</option>
+                    </select>
+                    <label>日</label>
+                </div>
+                
+
+                <!-- <label>民國年</label><input type="text" name="birth" id="" class="form-control form-control-sm">
+                <label>月</label><input type="text" name="birth" id="" class="form-control form-control-sm">
+                <label>日</label><input type="text" name="birth" id="" class="form-control form-control-sm"> -->
+            </div>
+            <!-- 5 -->
+            <div class="form-group">
+                <label for="">5.請問您的身高:</label><input type="text" name="height" id="height" class="form-control form-control-sm">
+            </div>
+            <!-- 6 -->
+            <div class="form-group">
+                <label for="">6.請問您的體重:</label><input type="text" name="weight" id="weight" class="form-control form-control-sm">
+            </div>
+        <!-- </fieldset> -->
+
+            <!-- 7 -->
+            <div class="form-group">
+                <label for="">7.請問您的身體活動量:</label>
+                <select name="activity" id="activity" class="form-control form-control-sm">
+                    <option value="" disabled selected>--請選擇--</option>
+                    <option value="activity1">低</option>
+                    <option value="activity2">稍低</option>
+                    <option value="activity3">適度</option>
+                    <option value="activity4">高</option>
+                </select>
+            </div>
+            <!-- 8 -->
+            <div class="form-group">
+                <label for="">8.請問您的教育程度:</label>
+                <select name="education_level" id="education_level" class="form-control form-control-sm">
+                    <option value="" disabled selected>--請選擇--</option>
+                    <option value="neither">無</option>
+                    <option value="private">自修或私塾</option>
+                    <option value="elementary">小學</option>
+                    <option value="junior">國中</option>
+                    <option value="senior">高中</option>
+                    <option value="vocational">高職</option>
+                    <option value="diploma">專科</option>
+                    <option value="bachelor">大學</option>
+                    <option value="master">研究所以上</option>
+                    <option value="education_other">其他</option>
+                </select>
+                <div class="other_div">
+                    <label for="">其他:</label>
+                    <input type="text" name="education_level_other" id=""  class="other form-control form-control-sm" disabled="true" >
+                </div>
+                
+                
+            </div>
+
+            <!-- 9 -->
+            <div class="form-group">
+                <label for="">9.請問您是否吃素:</label>
+                <select name="vegetarian" id="vegetarian" class="form-control form-control-sm">
+                    <option value="" disabled selected>--請選擇--</option>
+                    <option value="both">否，葷素皆可</option>
+                    <option value="vegan">是，純素食</option>
+                    <option value="lacto">是，奶素</option>
+                    <option value="ovo">是，蛋素</option>
+                    <option value="ovo_lacto">是，奶蛋素</option>
+                    <option value="vegetarian_other">其他</option>
+                </select> 
+                <div class="other_div">
+                    <label for="">其他:</label>
+                    <input type="text" name="vegetarian_other" id="" class="vegetarian_other form-control form-control-sm" disabled="true">
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="form-group">
+                <label for="">10.請問您是否懷孕中:</label> 
+                <div class="form-check">
+                    <input type="radio" name="pregnant" id="pregnant1" value="pregnant1" class="form-check-input">
+                    <label for="pregnant1" class="form-check-label">是</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="pregnant" id="pregnant2" value="pregnant2" class="form-check-input">
+                    <label for="pregnant2" class="form-check-label">否</label>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="form-group">
+                <label for="">11.請問您是否哺乳中:</label> 
+                <div class="form-check">
+                    <input type="radio" name="nursing" id="nursing1" value="nursing1" class="form-check-input">
+                    <label for="nursing1" class="form-check-label">是</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="nursing" id="nursing2" value="nursing2" class="form-check-input">
+                    <label for="nursing2" class="form-check-label">否</label>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="form-group">
+                <label for="">12.請問您最近是否有因為體重或健康因素而改變飲食習慣:</label><br> 
+                <div class="form-check">
+                    <input type="radio" name="eating_habit" id="eating_habit1" value="eating_habit1" class="form-check-input">
+                    <label for="eating_habit1" class="form-check-label">是，有改變</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="eating_habit" id="eating_habit2" value="eating_habit2" class="form-check-input">
+                    <label for="eating_habit2" class="form-check-label">否，沒有改變</label>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="form-group">
+                <label for="">13.請問您最近一個月是否有因為牙齒或嘴巴問題，造成吃東西不舒服或不想吃東西的情形:</label> <br> 
+                <select name="mouth_tooth" id="mouth_tooth" class="form-control form-control-sm">
+                    <option value="" disabled selected>--請選擇--</option>
+                    <option value="mouth_tooth1">從來沒有</option>
+                    <option value="mouth_tooth2">一個月少於1次</option>
+                    <option value="mouth_tooth3">一個月1-3次</option>
+                    <option value="mouth_tooth4">一星期1-3次</option>
+                    <option value="mouth_tooth5">一星期4-6次</option>
+                    <option value="mouth_tooth6">每天都有</option>
+                    <option value="mouth_tooth7">其他</option>
+                </select>
+                <div class="other_div">
+                    <label for="">其他:</label>
+                    <input type="text" name="mouth_tooth7" id="" class="mouth_tooth7 form-control form-control-sm" disabled="true">
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="form-group">
+                <label for="">14.請問您覺得自己的牙齒健康狀況好不好:</label> <br> 
+                <div class="form-check">
+                    <input type="radio" name="tooth" id="tooth1" value="tooth1" class="form-check-input">
+                    <label for="tooth1" class="form-check-label">很健康</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="tooth" id="tooth2" value="tooth2" class="form-check-input">
+                    <label for="tooth2" class="form-check-label">還好，有一些毛病</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="tooth" id="tooth3" value="tooth3" class="form-check-input">
+                    <label for="tooth3" class="form-check-label">很不好</label>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="form-group">
+                <label for="">15.請問您過去一個月吃的食物與一般自助餐菜餚用油度相比:</label> <br> 
+                <div class="form-check">
+                    <input type="radio" name="oil_compare" id="oil_compare1" value="oil_compare1" class="form-check-input"><label for="oil_compare1" class="form-check-label">跟一般自助餐差不多</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="oil_compare" id="oil_compare2" value="oil_compare2" class="form-check-input"><label  for="oil_compare2"class="form-check-label">比一般自助餐油</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="oil_compare" id="oil_compare3" value="oil_compare3" class="form-check-input"><label for="oil_compare3" class="form-check-label">比一般自助餐不油</label>
+                </div>
+            </div>
+            
+            <div>
+                <input type="submit" value="進入問卷" class="btn submit-primary mb-2" />
+              </div>
+
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="../basic.js"></script>
+</body>
+</html>

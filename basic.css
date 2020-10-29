@@ -1,0 +1,108 @@
+
+body{
+    background-color: #f7f7f7;
+}
+.basicwrap{
+    max-width: 50em;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    border-radius: 1.5em;
+}
+.contener{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contener>div{
+    margin-top: 20px;
+}
+label{
+  font-size: 20px;
+}
+.form-check>label{
+  font-size: 16px;
+}
+
+/* 生日樣式 */
+.birth_year{
+  display: inline;
+  width: 5em;
+}
+.birth_month{
+  display: inline;
+  width: 5em;
+}
+.birth_date{
+  display: inline;
+  width: 5em;
+}
+
+
+
+/* 驗證欄位樣式 */
+.error {
+    color: red;
+    
+  }
+
+  label.error {
+    display: inline;
+    font-size: 12px;
+  }
+
+  /* bootscrap樣式 */
+  .form-group{
+    margin-bottom:0.5em;
+  }
+  .other_div{
+    width: 100%;
+    margin-top: 3px;
+  }
+  .form-group{
+    margin-bottom: 2em;
+  }
+  .submit-primary{
+    background-color: #63b6b5;
+    border: none;
+    color: #ffffff;
+  }
+  .submit-primary:hover{
+    background-color: #63b6b5;
+    border: none;
+    color: #ffffff;
+  }
+  .submit-primary:active{
+    background-color: #63b6b5;
+    border: none;
+    color: #ffffff;
+  }
+  @media(max-width:768px){
+    h3{
+      font-size: 26px;
+    }
+    label{
+      font-size: 18px;
+    }
+  }
+  @media(max-width:376px){
+    .birth_year{
+      display: inline;
+      width: 5em;
+    }
+    .birth_month{
+      display: inline;
+      width: 5em;
+    }
+    .birth_date{
+      display: inline;
+      width: 5em;
+    }
+  
+  }
+  
+  
+        
+        
