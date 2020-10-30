@@ -40,29 +40,8 @@
             <!-- 4 -->
             <div class="form-group">
                 <label for="">4.請問您的生日:</label></br>
-
-                <div>
-                    <label>民國</label>
-                    <select name="" id="" class="birth_year form-control form-control-sm ">
-                        <option value="" disabled selected>--</option>
-                    </select>
-                    <label>年</label>
-                    
-                    <select name="" id="" class="birth_month form-control form-control-sm">
-                        <option value="" disabled selected>--</option>
-                    </select>
-                    <label>月</label>
-
-                    <select name="" id="" class="birth_date form-control form-control-sm">
-                        <option value="" disabled selected>--</option>
-                    </select>
-                    <label>日</label>
-                </div>
-                
-
-                <!-- <label>民國年</label><input type="text" name="birth" id="" class="form-control form-control-sm">
-                <label>月</label><input type="text" name="birth" id="" class="form-control form-control-sm">
-                <label>日</label><input type="text" name="birth" id="" class="form-control form-control-sm"> -->
+                <input type="date" name="purchase_date" min="2000-01-01"
+                    max="2050-12-31" class="form-control" value="{{ today|date:'Y-m-d' }}"required>
             </div>
             <!-- 5 -->
             <div class="form-group">
