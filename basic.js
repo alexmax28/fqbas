@@ -54,6 +54,8 @@ $(document).ready(function(){
     //    驗證
     $(function(){
         $('#form').validate({
+
+          
         /* 常用檢測屬性
        required:必填
        noSpace:空白
@@ -101,14 +103,22 @@ $(document).ready(function(){
           mouth_tooth:{
             required: true,
           },
-          address: 'required',
-          url:{
-            url: true
-          },
-          email: {
+
+          eating_habit:{
             required: true,
-            email: true
-          }
+          },
+          tooth:{
+            required: true,
+          },
+          oil_compare:{
+            required: true,
+          },
+          pregnant:{
+            required: true,
+          },
+          nursing:{
+            required: true,
+          },
         },
 
 
@@ -125,7 +135,9 @@ $(document).ready(function(){
           sex:{
             required: '必填'
           },
-
+          purchase_date:{
+            required: '必填',
+          },
           weight:{
             required: '必填',
             range:'1公斤至300公斤之間'
@@ -144,16 +156,23 @@ $(document).ready(function(){
             required: '必填',
           },
           mouth_tooth:'必填',
+          eating_habit:{
+            required: '必填',
+          },
+          tooth:{
+            required: '必填',
+          },
+          oil_compare:{
+            required: '必填',
+          },
+
+          pregnant:{
+            required: '必填',
+          },
+          nursing:{
+            required: '必填',
+          },
        
-   
-
-
-        //   address: '必填',
-        //   email: {
-        //     required:'必填',
-        //     email:'Email格式不正確'
-        //   },
-        //   url:'網址格式不正確'
         },
         submitHandler: function(form) {
           form.submit();
@@ -176,14 +195,3 @@ jQuery.extend(jQuery.validator.defaults,
   });
 
 
-
-//生日
-for(var i=0;i<109;i++){
-    $(".birth_year").append('<option>'+[i+1]+'</option>');
-};
-for(var i=0;i<12;i++){
-  $(".birth_month").append('<option>'+[i+1]+'</option>');
-};
-for(var i=0;i<31;i++){
-  $(".birth_date").append('<option>'+[i+1]+'</option>');
-};
