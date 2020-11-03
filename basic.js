@@ -83,6 +83,9 @@ $(document).ready(function(){
           sex:{
             required: true
           },
+          purchase_date:{
+            required: true
+          },
           weight:{
             required: true,
             range: [1, 300]
@@ -133,6 +136,9 @@ $(document).ready(function(){
             number:'編號需為數字'
           },
           sex:{
+            required: '必填'
+          },
+          purchase_date:{
             required: '必填'
           },
           purchase_date:{
