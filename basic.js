@@ -201,3 +201,9 @@ jQuery.extend(jQuery.validator.defaults,
   });
 
 
+
+
+  //submit
+  $(".btn").click(function(){
+    $("form").submit();
+  });  
